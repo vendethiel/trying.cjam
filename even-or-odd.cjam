@@ -1,0 +1,6 @@
+i2%"Odd""Even"?
+
+
+
+Calculates the remainder of stack[-1]%2, then does an if ("?").
+(needs the number on the stack)
