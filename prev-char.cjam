@@ -1,0 +1,6 @@
+(
+
+
+
+Turns out decrement also works on char!
+(needs a char on the stack, i.e. 'z)
