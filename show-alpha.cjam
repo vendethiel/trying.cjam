@@ -1,0 +1,6 @@
+26,{97+c}%
+
+
+
+26 letters, convert to range (","), the block, then foreach ("%").
+The block adds 97 to the integer (argument of the block), then convert it to a number ("c", basically chr() here).
