@@ -1,0 +1,11 @@
+,(;'#f*N*
+
+
+
+Expects the number of iterations at the top of the stack (named N)
+,(;'#f*N*
+,         Generates a 0-to-N range
+ (;       Extract the first value to the stack, and then pop it (removes the 0)
+   '#     Pushes the character #
+     f*   "F"or each element in the range, multiply/duplicate it with the character.
+      N*  Join by newline
