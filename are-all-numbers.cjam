@@ -1,0 +1,13 @@
+{`A,s-!}%:*
+
+
+
+Expects an array on the stack (i.e. `1 2 3]`)
+{`A,s-!}%:*
+{      }%   For each element in the array...
+ `          On one hand, get the string representation of that element
+  A,        One the other hand, build a list 1..10
+    s       The convert it to string
+     -      Remove them from the element (only leaves non-numeric characters)
+      !     Negate: if the string is empty (so it's a number), 1, otherwise 0.
+         :* Product. If all are 1, it's 0.
