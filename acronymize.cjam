@@ -1,0 +1,18 @@
+S/{:G,3>G[(\)]1G,tG?}%S*
+
+
+
+Expects the string on the stack (i.e. `"hey mileyzor"`)
+S/{:G,3>G[(\)]1G,tG?}%S*
+S/                       Split by space
+  {                 }%   For each word
+   :G                    Store it in G
+                   ?     If ...
+     ,3>                  ... the size is greater than 3
+        G[(              Take the head of the array (leaves the rest)
+           \)            And the tail (leaves the rest)
+             ]           Make it an array (`[head rest tail]`)
+              1  t       Replace the middle part (0-based arrays) with ...
+               G,        ... the size
+                  G      Otherwise, the word itself.
+                      S* Join with space
