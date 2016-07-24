@@ -1,0 +1,13 @@
+A,:):GGff*Sf*N*
+
+
+
+A                Ten
+ ,               Range (0..10)
+  :)             Pop the first 0
+    :G           Store in G (doesn't pop)
+      G          Put G on the stack again
+       ff*       Map with map with *.
+                 Foreach the bottom of the stack, and for each, quickmaps the element with the top of the stack and *.
+          Sf*    Foreach each subarray with Space and * (joins).
+          N*     Join the now-array of strings with newline.
