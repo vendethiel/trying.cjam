@@ -1,0 +1,9 @@
+'{,97>eeN*
+
+
+
+'{         The character "{"
+  ,        (ascii) range (0.."{")
+  97>      Slice off the first 97 elements
+     ee    Enumerate
+       N*  Join with newline
